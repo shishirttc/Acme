@@ -76,7 +76,9 @@ header a:hover{
 
 #showcase{
     min-height: 400px;
-    background: url(img/showcase.jpg) no-repeat 0 -400px;
+    background: url(img/showcase.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     color: #ffffff;
 }
@@ -89,20 +91,69 @@ header a:hover{
 
 #showcase p{
     font-size: 20px;
+    margin-bottom: 130px;
 }
 
 
 
 #newsletter{
-    padding: 15px;
+    padding: 10px;
     color: #ffffff;
     background: #35424a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#newsletter h1{
-    float: left;
+
+
+#newsletter h3{
+    font-size: 25px;
 }
-#newsletter form{
-    float: right;
-    margin-top: 15px;
+
+#newsletter div input{
+    height: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* box  */
+
+
+#boxes > .container{
+    margin: 30px auto;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+
+.box{
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.box img{
+    width: 100px;
+}
+
+
+footer{
+    background-color: #e8491d;
+    padding: 20px 0;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
